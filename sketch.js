@@ -6,13 +6,14 @@ let options = {
 };
 let video;
 let segmentation;
+let showTitlePage = true;
 
 function preload() {
   bodySegmentation = ml5.bodySegmentation("SelfieSegmentation", options);
 }
 
 function setup() {
-  createCanvas(1280, 960);
+  createCanvas(640, 480);
   noStroke();
   colorMode(HSB, height, width, 100);
   
@@ -24,6 +25,18 @@ function setup() {
 }
 
 function draw() {
+  if (showTitlePage) {
+    drawTitlePage();
+  } else {
+    drawRainbowPage();
+  }
+}
+
+function drawTitlePage() {
+  text('surfing my memory web', width/2, height/2);
+}
+
+function drawRainbowPage() {
   background(200, 100, 200);
   
   stepX = mouseX + 4;
