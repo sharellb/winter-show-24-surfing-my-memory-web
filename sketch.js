@@ -12,7 +12,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(640, 480);
+  createCanvas(1280, 960);
   noStroke();
   colorMode(HSB, height, width, 100);
   
