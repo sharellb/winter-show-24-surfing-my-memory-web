@@ -32,10 +32,10 @@ let images = [];
 function preload() {
   faceMesh = ml5.faceMesh(options);
   bodySegmentation = ml5.bodySegmentation("SelfieSegmentation", maskoptions);
-  internet1 = loadImage('/assets/photos/internet-1.png');
-  internet2 = loadImage('/assets/photos/internet-2.png');
-  internet3 = loadImage('/assets/photos/internet-3.png');
-  internet4 = loadImage('/assets/photos/internet-4.png');
+  internet1 = loadImage('assets/photos/internet-1.png');
+  internet2 = loadImage('assets/photos/internet-2.png');
+  internet3 = loadImage('assets/photos/internet-3.png');
+  internet4 = loadImage('assets/photos/internet-4.png');
 }
 
 function setup() {
