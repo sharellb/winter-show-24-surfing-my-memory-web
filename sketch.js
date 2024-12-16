@@ -48,7 +48,7 @@ function setup() {
   bodySegmentation.detectStart(video, gotResults);
   faceMesh.detectStart(video, gotFaces);
   
-  song = createAudio('/assets/audio/on-my-time.mp3');
+  song = createAudio('assets/audio/on-my-time.mp3');
   images.push(internet1);
   images.push(internet2);
   images.push(internet3);
